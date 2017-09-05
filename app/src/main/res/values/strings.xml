@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PoissonBlendAlpha2</string>
+    <string name="target_btn">Target</string>
+    <string name="blend_btn">Blend</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageButton
+            android:id="@+id/loadBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whitebox"
+            android:padding="7dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/picture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/newBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/whitebox"
+            android:padding="7dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/refreshbutton" />
+
+        <ImageButton
+            android:id="@+id/drawBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/whitebox"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/paintbrush" />
+
+        <ImageButton
+            android:id="@+id/eraseBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whitebox"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/eraser" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/frame"
+        android:padding="3dp"
+        android:translationZ="7dp">
+
+        <ImageView
+            android:id="@+id/attachIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart" />
+
+        <view
+            android:id="@+id/attachMV"
+            class="com.example.jun.poissonblendalpha2.pb.View.MaskView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:scaleType="fitStart" />
+        <RelativeLayout
+            android:id="@+id/attachRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/attachIV2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart" />
+            <ImageView
+                android:id="@+id/attachIV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/okBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whitebox"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/addbutton" />
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whitebox"
+                android:layout_marginLeft="7dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/nextBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whitebox"
+                android:layout_marginLeft="7dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/next"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whitebox"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/close" />
+    </LinearLayout>
+
+</LinearLayout>

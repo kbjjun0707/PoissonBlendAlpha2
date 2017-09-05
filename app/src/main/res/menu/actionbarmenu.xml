@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/newtaskitem"
+            android:title="새 작업"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/callgalleryitem"
+            android:title="앨범에서 불러오기"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/resetitem"
+            android:title="붙이기 취소"
+            app:showAsAction="never"/>
+    </group>
+</menu>
